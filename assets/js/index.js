@@ -125,12 +125,16 @@ if (valueOfSales >= 500) {
 let valueOfPurchase1, valueOfPurchase2;
 let price1 = 10,
   price2 = 15;
+let limit = 200;
+let discount = 0.05;
 valueOfPurchase1 = parseInt(prompt("Enter number of good1"));
 valueOfPurchase2 = parseInt(prompt("Enter number of good2"));
 valueOfSales = valueOfPurchase1 * price1 + valueOfPurchase2 * price2;
-if (valueOfSales >= 200) {
+if (valueOfSales >= limit) {
   console.log(
-    `Discount = ${valueOfSales * 0.05}, You should pay ${valueOfSales * 0.95}`
+    `Discount = ${valueOfSales * discount}, You should pay ${
+      valueOfSales * (1 - discount)
+    }`
   );
 } else {
   console.log(`No discount, You should pay, ${valueOfSales}`);
