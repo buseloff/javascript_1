@@ -59,7 +59,7 @@ console.log(result);
 userNumber = prompt("Enter number");
 result = Math.pow(userNumber, 2);
 console.log(result);
-alert(`Your number in square, ${result} `);*/
+alert(`Your number in square, ${result} `);
 let userNumber1, userNumber2;
 userNumber1 = prompt("Enter number1");
 userNumber2 = prompt("Enter number2");
@@ -70,4 +70,32 @@ let userRadius;
 const PI = 3.1415;
 userRadius = prompt("Enter radius");
 result = PI * Math.pow(userRadius, 2);
-alert(`Square of circle, ${result} `);
+alert(`Square of circle, ${result} `);*/
+
+let hello = "Hello User",
+  x1 = 10,
+  x_b = true;
+const PI = 3.1415;
+console.log(hello);
+console.log(x1);
+console.log(x_b);
+console.log(PI);
+
+let valueOfSales;
+valueOfSales = prompt("Enter value of sales");
+alert(`In a month value of sales will be, ${valueOfSales * 1.1} `);
+
+let userNumber, sum;
+userNumber = parseInt(prompt("Enter 3-digits number"));
+result = userNumber % 10;
+console.log(`Last number, ${result} `);
+
+sum = result;
+userNumber = (userNumber - result) / 10;
+
+result = userNumber % 10;
+sum += result;
+
+userNumber = (userNumber - result) / 10;
+sum += result;
+console.log(`Sum of digits, ${sum} `);
