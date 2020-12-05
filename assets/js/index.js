@@ -27,5 +27,11 @@ let x3 = "5000";
 x1 = x3;
 console.log(x1 + " " + x3);
 const MY_COLOR = "RED";
-MY_COLOR = "BLUE";
-console.log(MY_COLOR);
+console.log(`x1=${x1}`);
+let user_name;
+user_name = prompt("Enter your name");
+alert(`Hello, ${user_name} !`);
+
+let x5;
+x5 = prompt("Enter number");
+alert(`Your number, ${x5} `);
