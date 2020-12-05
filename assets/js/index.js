@@ -70,7 +70,7 @@ let userRadius;
 const PI = 3.1415;
 userRadius = prompt("Enter radius");
 result = PI * Math.pow(userRadius, 2);
-alert(`Square of circle, ${result} `);*/
+alert(`Square of circle, ${result} `);
 
 let hello = "Hello User",
   x1 = 10,
@@ -99,3 +99,39 @@ sum += result;
 userNumber = (userNumber - result) / 10;
 sum += result;
 console.log(`Sum of digits, ${sum} `);
+
+let x;
+x = prompt("Enter number");
+if (x >= 10) {
+  console.log("Number greater than or equal 10");
+} else {
+  console.log("Number less than 10");
+}
+
+x = parseInt(prompt("Enter number"));
+if (x % 2 == 0) {
+  console.log("Even number");
+} else {
+  console.log("Odd number");}*/
+
+let valueOfSales;
+valueOfSales = parseFloat(prompt("Enter value of sales"));
+if (valueOfSales >= 500) {
+  console.log(`Bonus, ${valueOfSales * 0.1} `);
+} else {
+  console.log(`No bonus`);
+}
+
+let valueOfPurchase1, valueOfPurchase2;
+let price1 = 10,
+  price2 = 15;
+valueOfPurchase1 = parseInt(prompt("Enter number of good1"));
+valueOfPurchase2 = parseInt(prompt("Enter number of good2"));
+valueOfSales = valueOfPurchase1 * price1 + valueOfPurchase2 * price2;
+if (valueOfSales >= 200) {
+  console.log(
+    `Discount = ${valueOfSales * 0.05}, You should pay ${valueOfSales * 0.95}`
+  );
+} else {
+  console.log(`No discount, You should pay, ${valueOfSales}`);
+}
