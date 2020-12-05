@@ -83,12 +83,12 @@ console.log(PI);
 
 let valueOfSales;
 valueOfSales = prompt("Enter value of sales");
-alert(`In a month value of sales will be, ${valueOfSales * 1.1} `);
+console.log(`In a month value of sales will be, ${valueOfSales * 1.1} `);
 
 let userNumber, sum;
 userNumber = parseInt(prompt("Enter 3-digits number"));
 result = userNumber % 10;
-console.log(`Last number, ${result} `);
+console.log(`Last digit, ${result} `);
 
 sum = result;
 userNumber = (userNumber - result) / 10;
