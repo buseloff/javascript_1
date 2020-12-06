@@ -56,7 +56,7 @@ for (x = 0; x <= 9; x++) {
   console.log(`${x} * ${number} = ${number * x}`);
 }*/
 
-let i,
+/*let i,
   N = 10,
   sum = 0;
 
@@ -71,4 +71,12 @@ for (i = 1; i <= N; i = i * 2) {
   console.log(`${1 / i}`);
   sum += 1 / i;
 }
-console.log(sum);
+console.log(sum);*/
+let userAnswer = parseInt(prompt("2 * 2 = ?"));
+let compAnswer = 4;
+while (userAnswer != compAnswer) {
+  alert("You are wrong!!!");
+  userAnswer = parseInt(prompt("Again 2 * 2 = ?"));
+}
+
+alert("Congratulations. You are right!!!");
